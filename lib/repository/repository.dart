@@ -24,13 +24,13 @@ class Repository {
     _stepperManager.decrement();
   }
 
-  Future<LocationResponse>? getLocation(int id) async {
+  Future<LocationResponse>? getLocation(String id) async {
     LocationResponse data = await _locationService.getLocation();
     _locationManager.fetchLocation(id, data.location);
     return data;
   }
 
-  deleteLocation(int id) {
+  deleteLocation(String id) {
     _locationManager.removeLocation(id);
   }
 

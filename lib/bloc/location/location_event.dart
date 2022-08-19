@@ -15,7 +15,7 @@ class AddLocation extends LocationEvent {
 }
 
 class DeleteLocation extends LocationEvent {
-  final int  id;
+  final String  id;
 
   const DeleteLocation({required this.id});
 
@@ -24,7 +24,7 @@ class DeleteLocation extends LocationEvent {
 }
 
 class FetchLocation extends LocationEvent {
-  final int id;
+  final String id;
 
   const FetchLocation({required this.id});
 

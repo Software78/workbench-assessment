@@ -18,7 +18,7 @@ class ModalController extends State<ModalScreen> {
     context.read<LocationBloc>().add(const AddLocation());
   }
 
-  deleteLocation(int id) {
+  deleteLocation(String id) {
     context.read<LocationBloc>().add(DeleteLocation(id: id));
   }
 

@@ -1,7 +1,7 @@
 class LocationModel {
   double? longitude;
   double? latitude;
-  int id;
+  String id;
 
   LocationModel({
     this.longitude,
